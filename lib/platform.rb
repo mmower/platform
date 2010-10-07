@@ -58,7 +58,9 @@ module Platform
       [ /vms/i,      :vms,       :vms ],
       [ /os2/i,      :os2,       :os2 ],
       [ /solaris/i,  :unix,      :solaris ],
+      [ /aix/i,      :unix,      :aix ],
       [ /irix/i,     :unix,      :irix ],
+      [ /hpux/i,     :unix,      :hpux ],
       [ /.*/,        :unknown,   :unknown ]
    ]
    (*), OS, IMPL = PLATFORMS.find { |p| RUBY_PLATFORM =~ /#{p[0]}/ }
@@ -72,6 +74,7 @@ module Platform
       [ /alpha/,     :alpha ],
       [ /sparc/i,    :sparc ],
       [ /mips/i,     :mips ],
+      [ /hppa/i,     :parisc ],
       [ /.*/,        :unknown ]
    ]
    (*), ARCH = ARCHS.find { |a| RUBY_PLATFORM =~ /#{a[0]}/}
