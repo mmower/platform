@@ -2,7 +2,7 @@ require 'rubygems'
 
 SPEC = Gem::Specification.new do |s| 
    s.name = "Platform" 
-   s.version = "0.4.0" 
+   s.version = "0.4.1" 
    s.author = "Matt Mower" 
    s.email = "self@mattmower.com" 
    s.homepage = "http://rubyforge.org/projects/platform/" 
@@ -15,5 +15,6 @@ SPEC = Gem::Specification.new do |s|
    s.require_path = "lib" 
    s.autorequire = "platform" 
    s.has_rdoc = true 
-   s.extra_rdoc_files = ["README"] 
+   s.extra_rdoc_files = ["README"]
+   s.license = "MIT"
 end 
