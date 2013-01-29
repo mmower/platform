@@ -2,7 +2,7 @@
 # Platform
 #
 # author: Matt Mower <self@mattmower.com>
-# license: LGPL
+# license: MIT
 #
 #
 # The Platform library offers a simple, reliable, means of
@@ -24,6 +24,7 @@
 #
 # Platform::OS
 #  :unix
+#  :hybrid (e.g. Cygwin)
 #  :win32
 #  :vms
 #  :os2
@@ -41,12 +42,20 @@
 #  :wince
 #  :vms
 #  :os2
+#  :solaris
+#  :aix
+#  :irix
+#  :hpux
 #  :unknown
 #
 # Platform::ARCH
 #  :x86
+#  :x86_64
 #  :ia64
 #  :powerpc
 #  :alpha
+#  :sparc
+#  :mips
+#  :parisc
 #  :unknown
 #
