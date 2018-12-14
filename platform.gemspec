@@ -2,10 +2,10 @@ require 'rubygems'
 
 SPEC = Gem::Specification.new do |s| 
    s.name = "Platform" 
-   s.version = "0.4.1" 
-   s.author = "Matt Mower" 
-   s.email = "self@mattmower.com" 
-   s.homepage = "http://rubyforge.org/projects/platform/" 
+   s.version = "0.4.2" 
+   s.authors = ["Matt Mower", "Kraig Strong"] 
+   s.emails = ["self@mattmower.com", "kraig.strong@gmail.com"]
+   s.homepage = "https://github.com/kraigstrong/platform" 
    s.platform = Gem::Platform::RUBY 
    s.summary = "Hopefully robust platform sensing" 
    candidates = Dir.glob("{bin,docs,lib,tests}/**/*") 

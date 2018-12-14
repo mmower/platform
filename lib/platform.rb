@@ -67,15 +67,15 @@ module Platform
 
    # What about AMD, Turion, Motorola, etc..?
    ARCHS = [
-      [ /i\d86/,     :x86 ],
-      [ /x86_64/,    :x86_64],
-      [ /ia64/,      :ia64 ],
-      [ /powerpc/,   :powerpc ],
-      [ /alpha/,     :alpha ],
-      [ /sparc/i,    :sparc ],
-      [ /mips/i,     :mips ],
-      [ /hppa/i,     :parisc ],
-      [ /.*/,        :unknown ]
+      [ /i\d86/,        :x86 ],
+      [ /x86_64|x64/,   :x86_64],
+      [ /ia64/,         :ia64 ],
+      [ /powerpc/,      :powerpc ],
+      [ /alpha/,        :alpha ],
+      [ /sparc/i,       :sparc ],
+      [ /mips/i,        :mips ],
+      [ /hppa/i,        :parisc ],
+      [ /.*/,           :unknown ]
    ]
    (*), ARCH = ARCHS.find { |a| RUBY_PLATFORM =~ /#{a[0]}/}
    
